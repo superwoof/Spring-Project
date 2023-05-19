@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>project2</title>
+<link rel="stylesheet" href="/HiCamp/Activity/styles/project2.css">
+
+<style>
+.st1 {
+	width: 450px;
+	margin: 3px;
+	margin-top: 3%;
+	border: 2px solid #000000;
+	border-radius: 5px;
+	padding-bottom: 10px;
+	text-size-adjust: auto;
+	font-size: 120%;
+}
+</style>
+</head>
+
+<body>
+	<div class="wrap">
+		<!-- 表頭 -->
+		<header>
+			<div>
+				<h1 class="logo">
+					<a href="./project2.html"><img src="../images/logo.jpg"
+						alt="logo"></a>
+				</h1>
+				<nav>
+					<ul class="list">
+						<li class="shop" id="shop"><a href="#">商城</a>
+							<ul>
+								<li><a href="#">裝備</a></li>
+							</ul></li>
+						<li class="discussion"><a href="#">論壇</a>
+							<ul>
+								<li><a href="#">討論</a></li>
+							</ul></li>
+						<li class="journey"><a href="#">行程</a></li>
+						<li class="news"><a href="#">露營區</a></li>
+						<li class="connection"><a href="#">聯絡我們</a></li>
+						<li class="member"><a href="./projectMemberLogin.html">登入</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+
+		<!-- 內容 -->
+		<div class="content">
+			<!-- 選單 -->
+			<aside>
+				<nav>
+					<ul class="content_list">
+						<li><a
+							href="http://localhost:8080/Project_Hiking/Activity_SelectAll">活動列表</a></li>
+						<li class="content_member"><a href="#">查詢活動</a>
+							<ul>
+								<li><a
+									href="http://localhost:8080/Project_Hiking/Project_activity/SelectAll.html">查詢全部</a></li>
+								<li><a
+									href="http://localhost:8080/Project_Hiking/Activity_SelectAll">查詢全部測試</a></li>
+								<li><a
+									href="http://localhost:8080/Project_Hiking/Project_activity/SelectByNo.html">單筆查詢</a>
+								</li>
+								<li><a
+									href="http://localhost:8080/Project_Hiking/Project_activity/SelectByKeyword.html">關鍵字查詢</a>
+								</li>
+							</ul></li>
+						<li><a
+							href="http://localhost:8080/Project_Hiking/Activity/InsertToActivity.html">新增活動</a></li>
+						<li><a
+							href="http://localhost:8080/Project_Hiking/Project_activity/UpdateActivity.html">修改活動</a></li>
+						<li><a
+							href="http://localhost:8080/Project_Hiking/Project_activity/DeleteActivity.html">刪除活動</a></li>
+					</ul>
+				</nav>
+			</aside>
+
+			<!-- 新增內容 -->
+			<ul class="bar"
+				style="font-size: 100%; justify-content: space-between; margin: 200px auto;">
+				<form method="post" action="../Activity_Insert" class="form">
+					<p>
+					<h1 style="color: #000000;">新增資料</h1>
+					</p>
+					<hr style="border-bottom: 2px solid #00448d;">
+					<br>
+					<p>請輸入資料：</p>
+
+					<br> <label for="">活動類型：</label> <label for=""><input
+						type="text" name="activityType" list="typelist" class="st1"
+						placeholder="請輸入類型" /> <datalist id="typelist">
+							<option value="新手專區"></option>
+							<option value="百岳入門"></option>
+							<option value="百岳進階"></option>
+							<option value="長天數縱走"></option>
+							<option value="中級山野營"></option>
+						</datalist></label> <br> <label for="">活動名稱：</label> <label for=""><input
+						type="text" name="activityName" list="namelist" class="st1"
+						placeholder="請輸入名稱" /><datalist id="namelist">
+						<option value="帝王之山~南湖群峰五天四夜"></option>
+						<option value="寶島第一尖~中央尖山四天三夜"></option>
+						<option value="步步驚心~北二段縱走四天三夜"></option>
+						<option value="一生必朝聖: 水鹿大軍圍繞的北三段(能高安東軍)縱走六天五夜"></option>
+						<option value="野外求生體驗營"></option>
+						<option value="新手入門: 七星山"></option>
+						<option value="台版富士山: 苗栗加里山一日單攻"></option>
+					</datalist></label> 
+					<br> <label for="">活動地點：</label> <label for=""><input
+						type="text" name="activityLocation" list="locationlist"
+						class="st1" placeholder="請輸入地點" /> <datalist id="locationlist">
+							<option value="太魯閣國家公園"></option>
+							<option value="玉山國家公園"></option>
+							<option value="雪山國家公園"></option>
+							<option value="陽明山國家公園"></option>
+							<option value="奧萬大國家森林遊樂區"></option>
+							<option value="新北市山區"></option>
+						</datalist></label> <br> <label for="">活動資訊：</label> <label for=""><input
+						type="text" name="activityInfo" class="st1" placeholder="請輸入資訊" /></label>
+					<br> <label for="">活動名額：</label> <label for=""><input
+						type="number" name="activityQuota" class="st1" placeholder="請輸入名額" /></label>
+					<br> <label for="">活動價格：</label> <label for=""><input
+						type="number" name="activityPrice"  list="Pricelist" class="st1" placeholder="請輸入價格" /><datalist id="Pricelist">
+							<option value="6500"></option>
+							<option value="1600"></option>
+							<option value="12000"></option>
+							<option value="500"></option>
+							<option value="3200"></option>
+							<option value="5000"></option></datalist></label>
+
+					<br> <br> <input type="submit" style="font-size: 120%;"
+						value="確定" /> <input type="reset" style="font-size: 120%;"
+						value="清除" />
+			</ul>
+		</div>
+
+		<!-- 頁尾 -->
+		<footer>
+			<div class="infomation">
+				<h2>
+					<a href="./project2.html"><img src="../images/logo.jpg"
+						alt="logo"></a>
+				</h2>
+				<ul>
+					<li>復興南路390號</li>
+					<li><a href="tel:0987654321">0987654321</a></li>
+					<li><a href="mailto:123@gmail.com">123@gmail.com</a></li>
+				</ul>
+			</div>
+			<div class="bottom">
+				<p>Copyright © 2023 資展國際旅行社 by JAVAEE65 Media. All Rights
+					Reserved</p>
+			</div>
+		</footer>
+	</div>
+
+</body>
+
+</html>

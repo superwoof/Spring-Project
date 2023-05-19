@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>project2</title>
+<link rel="stylesheet" href="/styles/project2.css">
+<style>
+.st1 {
+	width: 450px;
+	margin: 3px;
+	margin-top: 3%;
+	border: 2px solid #000000;
+	border-radius: 5px;
+	padding-bottom: 10px;
+	text-size-adjust: auto;
+	font-size: 120%;
+}
+</style>
+</head>
+
+<body>
+	<div class="wrap">
+
+		<!-- 表頭 -->
+		<header>
+			<div>
+				<h1 class="logo">
+					<a href="./project2.html"><img src="../images/logo.jpg"
+						alt="logo"></a>
+				</h1>
+				<nav>
+					<ul class="list">
+						<li class="shop" id="shop"><a href="#">商城</a>
+							<ul>
+								<li><a href="#">裝備</a></li>
+							</ul></li>
+						<li class="discussion"><a href="#">論壇</a>
+							<ul>
+								<li><a href="#">討論</a></li>
+							</ul></li>
+						<li class="journey"><a href="#">行程</a></li>
+						<li class="news"><a href="#">露營區</a></li>
+						<li class="connection"><a href="#">聯絡我們</a></li>
+						<li class="member"><a href="./projectMemberLogin.html">登入</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+
+		<!-- 內容 -->
+		<div class="content">
+			<!-- 選單 -->
+			<aside>
+				<nav>
+					<ul class="content_list">
+						<li><a
+							href="http://localhost:8080/Project_Hiking/Activity_SelectAll">活動列表</a></li>
+						<li class="content_member"><a href="#">查詢活動</a>
+							<ul>
+								<li><a
+									href="http://localhost:8080/Project_Hiking/Project_activity/SelectAll.html">查詢全部</a></li>
+								<li><a
+									href="http://localhost:8080/Project_Hiking/Activity_SelectAll">查詢全部測試</a></li>
+								<li><a
+									href="http://localhost:8080/Project_Hiking/Project_activity/SelectByNo.html">單筆查詢</a>
+								</li>
+								<li><a
+									href="http://localhost:8080/Project_Hiking/Project_activity/SelectByKeyword.html">關鍵字查詢</a>
+								</li>
+							</ul></li>
+						<li><a
+							href="http://localhost:8080/Project_Hiking/Activity/InsertToActivity.html">新增活動</a></li>
+						<li><a
+							href="http://localhost:8080/Project_Hiking/Project_activity/UpdateActivity.html">修改活動</a></li>
+						<li><a
+							href="http://localhost:8080/Project_Hiking/Project_activity/DeleteActivity.html">刪除活動</a></li>
+					</ul>
+				</nav>
+			</aside>
+
+			<!-- 新增內容 -->
+			<form method="post" action="../Activity_InsertPicture"
+				enctype="multipart/form-data" accept="image" class="form">
+					<h1 style="color: #000000;">新增資料</h1>
+					<hr style="border-bottom: 2px solid #00448d;">
+					<br>
+					<p>請輸入資料：</p>
+					<br>
+
+					<label for=""><td>活動編號:</label><td>
+					<label for=""><td><input type="number" size="30"
+							class="st1"
+							value="<%=activityPicture.getActivityNo()%> placeholder="請輸入活動編號""></label>
+
+
+					<br>
+					<label for="">活動照片：</label>
+					<label for=""> File 1: <input type="file"
+						name="activityPicture1" /><br> 
+						
+						<input type="submit"
+						value="upload" /> <br> 
+						
+			</form>
+
+		
+			</ul>
+		</div>
+
+	</div>
+
+	<!-- 頁尾 -->
+	<footer>
+		<div class="infomation">
+			<h2>
+				<a href="./project2.html"><img src="../images/logo.jpg"
+					alt="logo"></a>
+			</h2>
+			<ul>
+				<li>復興南路390號</li>
+				<li><a href="tel:0987654321">0987654321</a></li>
+				<li><a href="mailto:123@gmail.com">123@gmail.com</a></li>
+			</ul>
+		</div>
+		<div class="bottom">
+			<p>Copyright © 2023 資展國際旅行社 by JAVAEE65 Media. All Rights
+				Reserved</p>
+		</div>
+	</footer>
+	</div>
+
+</body>
+
+</html>

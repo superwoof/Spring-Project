@@ -1,0 +1,78 @@
+:root {
+    --text_color: #D08856;
+    --footer_color: #41403C;
+    --bgc_color: #d5f3f5;
+}
+
+.member ul {
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    display: none;
+}
+
+.article {
+    margin: 200px 0 150px 500px;
+    position: relative;
+    width: 50%;
+}
+
+#search {
+    position: absolute;
+    right: 0;
+    top: -40px;
+    font-size: 20px;
+}
+
+.memberInformation {
+    width: 70%;
+    margin:150px auto ;
+    font-size: 20px;
+    color: var(--text_color);
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 20px 50px;
+    text-align: left;
+}
+
+.memberInformation thead{
+	background: var(--text_color);
+	color: white;
+}
+
+.memberInformation .btn{
+	background: var(--text_color);
+	color: white;
+	width: 3em;
+	border-radius: 5px;
+	margin-bottom: 5px;
+	text-decoration: none;
+}
+
+.memberInformation td,
+.memberInformation th{
+	padding: 0px 10px;
+}
+
+.memberInformation .th1{
+	width: 3em;
+}
+
+.memberInformation .th2{
+	width: 3em;
+}
+.memberInformation .th3{
+	width: 3em;
+}
+.memberInformation .th4{
+	width: 28em;
+}
+.memberInformation .th5{
+	width: 3em;
+}
+.memberInformation .th6{
+	width: 7em;
+}
+.memberInformation .th7{
+	width: 4m;
+}
